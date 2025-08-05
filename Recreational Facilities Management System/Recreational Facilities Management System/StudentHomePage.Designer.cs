@@ -35,7 +35,6 @@
             this.btnBooking = new System.Windows.Forms.Button();
             this.btnUpdate = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.lblName = new System.Windows.Forms.Label();
             this.panelNav.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -116,19 +115,11 @@
             // label1
             // 
             this.label1.Font = new System.Drawing.Font("Segoe UI", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(373, 152);
+            this.label1.Location = new System.Drawing.Point(293, 228);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(252, 71);
+            this.label1.Size = new System.Drawing.Size(442, 71);
             this.label1.TabIndex = 1;
-            this.label1.Text = "Welcome!!";
-            // 
-            // lblName
-            // 
-            this.lblName.BackColor = System.Drawing.Color.Red;
-            this.lblName.Location = new System.Drawing.Point(399, 266);
-            this.lblName.Name = "lblName";
-            this.lblName.Size = new System.Drawing.Size(155, 33);
-            this.lblName.TabIndex = 2;
+            this.label1.Text = "Welcome, Student";
             // 
             // StudentHomePage
             // 
@@ -136,7 +127,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(800, 527);
-            this.Controls.Add(this.lblName);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panelNav);
             this.Name = "StudentHomePage";
@@ -156,6 +146,5 @@
         private System.Windows.Forms.Button btnViewFacility;
         private System.Windows.Forms.Button btnReview;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label lblName;
     }
 }

@@ -1,6 +1,6 @@
 ﻿namespace Recreational_Facilities_Management_System
 {
-    partial class StudentBook
+    partial class StudentReview
     {
         /// <summary>
         /// Required designer variable.
@@ -35,16 +35,13 @@
             this.btnReview = new System.Windows.Forms.Button();
             this.btnSearch = new System.Windows.Forms.Button();
             this.lblTitle = new System.Windows.Forms.Label();
+            this.cmbFacility = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.cmbRating = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.cmbFacilityName = new System.Windows.Forms.ComboBox();
-            this.dtpDate = new System.Windows.Forms.DateTimePicker();
-            this.cmbStartTime = new System.Windows.Forms.ComboBox();
-            this.cmbEndTime = new System.Windows.Forms.ComboBox();
-            this.btnBook = new System.Windows.Forms.Button();
+            this.txtFeedback = new System.Windows.Forms.TextBox();
+            this.btnSubmit = new System.Windows.Forms.Button();
             this.panelNav.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -56,10 +53,10 @@
             this.panelNav.Controls.Add(this.btnViewFacility);
             this.panelNav.Controls.Add(this.btnReview);
             this.panelNav.Controls.Add(this.btnSearch);
-            this.panelNav.Location = new System.Drawing.Point(-1, -9);
+            this.panelNav.Location = new System.Drawing.Point(0, -1);
             this.panelNav.Name = "panelNav";
-            this.panelNav.Size = new System.Drawing.Size(213, 545);
-            this.panelNav.TabIndex = 3;
+            this.panelNav.Size = new System.Drawing.Size(213, 525);
+            this.panelNav.TabIndex = 4;
             // 
             // btnUpdate
             // 
@@ -76,7 +73,7 @@
             // btnBooking
             // 
             this.btnBooking.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBooking.Font = new System.Drawing.Font("Segoe UI Black", 10.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBooking.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBooking.ForeColor = System.Drawing.SystemColors.Control;
             this.btnBooking.Location = new System.Drawing.Point(13, 257);
             this.btnBooking.Name = "btnBooking";
@@ -100,7 +97,7 @@
             // btnReview
             // 
             this.btnReview.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnReview.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReview.Font = new System.Drawing.Font("Segoe UI Black", 10.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnReview.ForeColor = System.Drawing.SystemColors.Control;
             this.btnReview.Location = new System.Drawing.Point(22, 346);
             this.btnReview.Name = "btnReview";
@@ -125,144 +122,103 @@
             // 
             this.lblTitle.AutoSize = true;
             this.lblTitle.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitle.Location = new System.Drawing.Point(395, 75);
+            this.lblTitle.Location = new System.Drawing.Point(402, 83);
             this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(199, 31);
-            this.lblTitle.TabIndex = 4;
-            this.lblTitle.Text = "Preform Booking";
+            this.lblTitle.Size = new System.Drawing.Size(162, 31);
+            this.lblTitle.TabIndex = 5;
+            this.lblTitle.Text = "Rate a Facility";
+            // 
+            // cmbFacility
+            // 
+            this.cmbFacility.FormattingEnabled = true;
+            this.cmbFacility.Location = new System.Drawing.Point(408, 190);
+            this.cmbFacility.Name = "cmbFacility";
+            this.cmbFacility.Size = new System.Drawing.Size(132, 24);
+            this.cmbFacility.TabIndex = 12;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(258, 175);
+            this.label1.Location = new System.Drawing.Point(296, 183);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(137, 28);
-            this.label1.TabIndex = 5;
-            this.label1.Text = "Facility Name:";
+            this.label1.Size = new System.Drawing.Size(77, 28);
+            this.label1.TabIndex = 11;
+            this.label1.Text = "Facility:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(267, 320);
+            this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(296, 241);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(0, 28);
-            this.label2.TabIndex = 6;
+            this.label2.Size = new System.Drawing.Size(122, 28);
+            this.label2.TabIndex = 13;
+            this.label2.Text = "Rating (1-5):";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
+            // 
+            // cmbRating
+            // 
+            this.cmbRating.BackColor = System.Drawing.Color.White;
+            this.cmbRating.Cursor = System.Windows.Forms.Cursors.Default;
+            this.cmbRating.FormattingEnabled = true;
+            this.cmbRating.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"});
+            this.cmbRating.Location = new System.Drawing.Point(423, 244);
+            this.cmbRating.Name = "cmbRating";
+            this.cmbRating.Size = new System.Drawing.Size(44, 24);
+            this.cmbRating.TabIndex = 14;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(267, 227);
+            this.label3.Location = new System.Drawing.Point(296, 302);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(59, 28);
-            this.label3.TabIndex = 7;
-            this.label3.Text = "Date:";
+            this.label3.Size = new System.Drawing.Size(151, 28);
+            this.label3.TabIndex = 15;
+            this.label3.Text = "Your Feedback:";
             // 
-            // label4
+            // txtFeedback
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(267, 280);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(110, 28);
-            this.label4.TabIndex = 8;
-            this.label4.Text = "Start Time:";
+            this.txtFeedback.Location = new System.Drawing.Point(350, 340);
+            this.txtFeedback.Multiline = true;
+            this.txtFeedback.Name = "txtFeedback";
+            this.txtFeedback.Size = new System.Drawing.Size(263, 95);
+            this.txtFeedback.TabIndex = 16;
             // 
-            // label5
+            // btnSubmit
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(267, 337);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(102, 28);
-            this.label5.TabIndex = 9;
-            this.label5.Text = "End Time:";
+            this.btnSubmit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnSubmit.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSubmit.ForeColor = System.Drawing.Color.White;
+            this.btnSubmit.Location = new System.Drawing.Point(415, 459);
+            this.btnSubmit.Name = "btnSubmit";
+            this.btnSubmit.Size = new System.Drawing.Size(125, 41);
+            this.btnSubmit.TabIndex = 17;
+            this.btnSubmit.Text = "Submit";
+            this.btnSubmit.UseVisualStyleBackColor = false;
             // 
-            // cmbFacilityName
-            // 
-            this.cmbFacilityName.FormattingEnabled = true;
-            this.cmbFacilityName.Location = new System.Drawing.Point(397, 182);
-            this.cmbFacilityName.Name = "cmbFacilityName";
-            this.cmbFacilityName.Size = new System.Drawing.Size(132, 24);
-            this.cmbFacilityName.TabIndex = 10;
-            // 
-            // dtpDate
-            // 
-            this.dtpDate.Location = new System.Drawing.Point(338, 233);
-            this.dtpDate.Name = "dtpDate";
-            this.dtpDate.Size = new System.Drawing.Size(200, 22);
-            this.dtpDate.TabIndex = 11;
-            // 
-            // cmbStartTime
-            // 
-            this.cmbStartTime.FormattingEnabled = true;
-            this.cmbStartTime.Items.AddRange(new object[] {
-            "9:00 am",
-            "9:30 am",
-            "10:00 am",
-            "10:30 am",
-            "11:00 am",
-            "11:30 am",
-            "12:00 pm",
-            "12:30 pm",
-            "1:00 pm"});
-            this.cmbStartTime.Location = new System.Drawing.Point(377, 284);
-            this.cmbStartTime.Name = "cmbStartTime";
-            this.cmbStartTime.Size = new System.Drawing.Size(121, 24);
-            this.cmbStartTime.TabIndex = 12;
-            // 
-            // cmbEndTime
-            // 
-            this.cmbEndTime.FormattingEnabled = true;
-            this.cmbEndTime.Items.AddRange(new object[] {
-            "9:00 am",
-            "9:30 am",
-            "10:00 am",
-            "10:30 am",
-            "11:00 am",
-            "11:30 am",
-            "12:00 pm",
-            "12:30 pm",
-            "1:00 pm",
-            "1:30 pm"});
-            this.cmbEndTime.Location = new System.Drawing.Point(377, 341);
-            this.cmbEndTime.Name = "cmbEndTime";
-            this.cmbEndTime.Size = new System.Drawing.Size(121, 24);
-            this.cmbEndTime.TabIndex = 13;
-            // 
-            // btnBook
-            // 
-            this.btnBook.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btnBook.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBook.ForeColor = System.Drawing.Color.White;
-            this.btnBook.Location = new System.Drawing.Point(429, 413);
-            this.btnBook.Name = "btnBook";
-            this.btnBook.Size = new System.Drawing.Size(125, 41);
-            this.btnBook.TabIndex = 14;
-            this.btnBook.Text = "Book";
-            this.btnBook.UseVisualStyleBackColor = false;
-            // 
-            // StudentBook
+            // StudentReview
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 500);
-            this.Controls.Add(this.btnBook);
-            this.Controls.Add(this.cmbEndTime);
-            this.Controls.Add(this.cmbStartTime);
-            this.Controls.Add(this.dtpDate);
-            this.Controls.Add(this.cmbFacilityName);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
+            this.ClientSize = new System.Drawing.Size(800, 512);
+            this.Controls.Add(this.btnSubmit);
+            this.Controls.Add(this.txtFeedback);
             this.Controls.Add(this.label3);
+            this.Controls.Add(this.cmbRating);
             this.Controls.Add(this.label2);
+            this.Controls.Add(this.cmbFacility);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lblTitle);
             this.Controls.Add(this.panelNav);
-            this.Name = "StudentBook";
-            this.Text = "StudentBook";
+            this.Name = "StudentReview";
+            this.Text = "StudentReview";
             this.panelNav.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -278,15 +234,12 @@
         private System.Windows.Forms.Button btnReview;
         private System.Windows.Forms.Button btnSearch;
         private System.Windows.Forms.Label lblTitle;
+        private System.Windows.Forms.ComboBox cmbFacility;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.ComboBox cmbRating;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.ComboBox cmbFacilityName;
-        private System.Windows.Forms.DateTimePicker dtpDate;
-        private System.Windows.Forms.ComboBox cmbStartTime;
-        private System.Windows.Forms.ComboBox cmbEndTime;
-        private System.Windows.Forms.Button btnBook;
+        private System.Windows.Forms.TextBox txtFeedback;
+        private System.Windows.Forms.Button btnSubmit;
     }
 }
