@@ -58,6 +58,12 @@
     <Compile Include="Maintenance  CleaningSupplies.Designer.cs">
       <DependentUpon>Maintenance  CleaningSupplies.cs</DependentUpon>
     </Compile>
+    <Compile Include="Maintenance Profile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Maintenance Profile.Designer.cs">
+      <DependentUpon>Maintenance Profile.cs</DependentUpon>
+    </Compile>
     <Compile Include="Maintenance Schedule.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -86,6 +92,9 @@
     </Compile>
     <EmbeddedResource Include="Maintenance  CleaningSupplies.resx">
       <DependentUpon>Maintenance  CleaningSupplies.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Maintenance Profile.resx">
+      <DependentUpon>Maintenance Profile.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Maintenance Schedule.resx">
       <DependentUpon>Maintenance Schedule.cs</DependentUpon>
