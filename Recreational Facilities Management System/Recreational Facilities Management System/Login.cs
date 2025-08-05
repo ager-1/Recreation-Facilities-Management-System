@@ -16,5 +16,10 @@ namespace Recreational_Facilities_Management_System
         {
             InitializeComponent();
         }
+
+        private void Login_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
