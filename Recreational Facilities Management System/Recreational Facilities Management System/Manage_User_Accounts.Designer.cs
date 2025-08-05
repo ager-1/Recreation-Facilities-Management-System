@@ -30,10 +30,10 @@
         {
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnRepairAndReplace = new System.Windows.Forms.Button();
-            this.btnMaintenance = new System.Windows.Forms.Button();
-            this.btnSportsAndRecreational = new System.Windows.Forms.Button();
             this.btnManageUserAcc = new System.Windows.Forms.Button();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.btnSportsAndRecreational = new System.Windows.Forms.Button();
+            this.btnMaintenance = new System.Windows.Forms.Button();
+            this.cmbRole = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.txtUsername = new System.Windows.Forms.TextBox();
@@ -41,7 +41,7 @@
             this.txtPassword = new System.Windows.Forms.TextBox();
             this.btnAddUser = new System.Windows.Forms.Button();
             this.btnDeleteUser = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgvUser = new System.Windows.Forms.DataGridView();
             this.UserID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.UserName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.UserEmail = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -49,7 +49,7 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvUser)).BeginInit();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -79,18 +79,18 @@
             this.btnRepairAndReplace.Text = "Repair and Replacement";
             this.btnRepairAndReplace.UseVisualStyleBackColor = false;
             // 
-            // btnMaintenance
+            // btnManageUserAcc
             // 
-            this.btnMaintenance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btnMaintenance.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMaintenance.Font = new System.Drawing.Font("Segoe UI Semibold", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMaintenance.ForeColor = System.Drawing.Color.White;
-            this.btnMaintenance.Location = new System.Drawing.Point(23, 242);
-            this.btnMaintenance.Name = "btnMaintenance";
-            this.btnMaintenance.Size = new System.Drawing.Size(155, 50);
-            this.btnMaintenance.TabIndex = 6;
-            this.btnMaintenance.Text = "Maintenance Staff and Schedule";
-            this.btnMaintenance.UseVisualStyleBackColor = false;
+            this.btnManageUserAcc.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnManageUserAcc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnManageUserAcc.Font = new System.Drawing.Font("Segoe UI Semibold", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnManageUserAcc.ForeColor = System.Drawing.Color.White;
+            this.btnManageUserAcc.Location = new System.Drawing.Point(23, 74);
+            this.btnManageUserAcc.Name = "btnManageUserAcc";
+            this.btnManageUserAcc.Size = new System.Drawing.Size(155, 50);
+            this.btnManageUserAcc.TabIndex = 4;
+            this.btnManageUserAcc.Text = "User Accounts";
+            this.btnManageUserAcc.UseVisualStyleBackColor = false;
             // 
             // btnSportsAndRecreational
             // 
@@ -105,29 +105,29 @@
             this.btnSportsAndRecreational.Text = "Sports and Recreational Facilities";
             this.btnSportsAndRecreational.UseVisualStyleBackColor = false;
             // 
-            // btnManageUserAcc
+            // btnMaintenance
             // 
-            this.btnManageUserAcc.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btnManageUserAcc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnManageUserAcc.Font = new System.Drawing.Font("Segoe UI Semibold", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnManageUserAcc.ForeColor = System.Drawing.Color.White;
-            this.btnManageUserAcc.Location = new System.Drawing.Point(23, 74);
-            this.btnManageUserAcc.Name = "btnManageUserAcc";
-            this.btnManageUserAcc.Size = new System.Drawing.Size(155, 50);
-            this.btnManageUserAcc.TabIndex = 4;
-            this.btnManageUserAcc.Text = "User Accounts";
-            this.btnManageUserAcc.UseVisualStyleBackColor = false;
+            this.btnMaintenance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnMaintenance.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMaintenance.Font = new System.Drawing.Font("Segoe UI Semibold", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMaintenance.ForeColor = System.Drawing.Color.White;
+            this.btnMaintenance.Location = new System.Drawing.Point(23, 242);
+            this.btnMaintenance.Name = "btnMaintenance";
+            this.btnMaintenance.Size = new System.Drawing.Size(155, 50);
+            this.btnMaintenance.TabIndex = 6;
+            this.btnMaintenance.Text = "Maintenance Staff and Schedule";
+            this.btnMaintenance.UseVisualStyleBackColor = false;
             // 
-            // comboBox1
+            // cmbRole
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.cmbRole.FormattingEnabled = true;
+            this.cmbRole.Items.AddRange(new object[] {
             "Receptionist",
             "Maintenance"});
-            this.comboBox1.Location = new System.Drawing.Point(441, 36);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(143, 24);
-            this.comboBox1.TabIndex = 1;
+            this.cmbRole.Location = new System.Drawing.Point(441, 36);
+            this.cmbRole.Name = "cmbRole";
+            this.cmbRole.Size = new System.Drawing.Size(143, 24);
+            this.cmbRole.TabIndex = 1;
             // 
             // label1
             // 
@@ -191,24 +191,24 @@
             this.btnDeleteUser.Text = "Delete User";
             this.btnDeleteUser.UseVisualStyleBackColor = true;
             // 
-            // dataGridView1
+            // dgvUser
             // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgvUser.AllowUserToAddRows = false;
+            this.dgvUser.AllowUserToDeleteRows = false;
+            this.dgvUser.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvUser.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.UserID,
             this.UserName,
             this.UserEmail,
             this.UserRole});
-            this.dataGridView1.Location = new System.Drawing.Point(6, 22);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.RowHeadersVisible = false;
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(290, 150);
-            this.dataGridView1.TabIndex = 9;
+            this.dgvUser.Location = new System.Drawing.Point(6, 22);
+            this.dgvUser.Name = "dgvUser";
+            this.dgvUser.ReadOnly = true;
+            this.dgvUser.RowHeadersVisible = false;
+            this.dgvUser.RowHeadersWidth = 51;
+            this.dgvUser.RowTemplate.Height = 24;
+            this.dgvUser.Size = new System.Drawing.Size(290, 150);
+            this.dgvUser.TabIndex = 9;
             // 
             // UserID
             // 
@@ -253,7 +253,7 @@
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.dataGridView1);
+            this.groupBox2.Controls.Add(this.dgvUser);
             this.groupBox2.Controls.Add(this.btnDeleteUser);
             this.groupBox2.Location = new System.Drawing.Point(514, 111);
             this.groupBox2.Name = "groupBox2";
@@ -273,7 +273,7 @@
             this.Controls.Add(this.txtUsername);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.cmbRole);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.groupBox2);
@@ -281,7 +281,7 @@
             this.Name = "Manage_User_Accounts";
             this.Text = "Manage_User_Accounts";
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvUser)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -295,7 +295,7 @@
         private System.Windows.Forms.Button btnManageUserAcc;
         private System.Windows.Forms.Button btnSportsAndRecreational;
         private System.Windows.Forms.Button btnMaintenance;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cmbRole;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtUsername;
@@ -303,7 +303,7 @@
         private System.Windows.Forms.TextBox txtPassword;
         private System.Windows.Forms.Button btnAddUser;
         private System.Windows.Forms.Button btnDeleteUser;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgvUser;
         private System.Windows.Forms.DataGridViewTextBoxColumn UserID;
         private System.Windows.Forms.DataGridViewTextBoxColumn UserName;
         private System.Windows.Forms.DataGridViewTextBoxColumn UserEmail;

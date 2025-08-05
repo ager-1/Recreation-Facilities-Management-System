@@ -16,7 +16,7 @@ namespace Recreational_Facilities_Management_System
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Manage_Sports_and_Recreational_Facilities());
+            Application.Run(new Maintenance_Staff_and_Schedule());
         }
     }
 }

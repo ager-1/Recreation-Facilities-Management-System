@@ -38,16 +38,16 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cmbFacilityType = new System.Windows.Forms.ComboBox();
             this.txtFacilityName = new System.Windows.Forms.TextBox();
             this.nudRate = new System.Windows.Forms.NumericUpDown();
             this.txtFacilityLocation = new System.Windows.Forms.TextBox();
             this.chkAvailable = new System.Windows.Forms.CheckBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.btnAddFacility = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgvFacility = new System.Windows.Forms.DataGridView();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnDelFacility = new System.Windows.Forms.Button();
             this.FacilityID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.FacilityName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.FacilityLocation = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -55,7 +55,7 @@
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudRate)).BeginInit();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvFacility)).BeginInit();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -174,16 +174,16 @@
             this.label5.TabIndex = 6;
             this.label5.Text = "Availability";
             // 
-            // comboBox1
+            // cmbFacilityType
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.cmbFacilityType.FormattingEnabled = true;
+            this.cmbFacilityType.Items.AddRange(new object[] {
             "Indoor",
             "Outdoor"});
-            this.comboBox1.Location = new System.Drawing.Point(480, 36);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 24);
-            this.comboBox1.TabIndex = 7;
+            this.cmbFacilityType.Location = new System.Drawing.Point(480, 36);
+            this.cmbFacilityType.Name = "cmbFacilityType";
+            this.cmbFacilityType.Size = new System.Drawing.Size(121, 24);
+            this.cmbFacilityType.TabIndex = 7;
             // 
             // txtFacilityName
             // 
@@ -238,28 +238,28 @@
             this.btnAddFacility.Text = "Add Facility";
             this.btnAddFacility.UseVisualStyleBackColor = true;
             // 
-            // dataGridView1
+            // dgvFacility
             // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgvFacility.AllowUserToAddRows = false;
+            this.dgvFacility.AllowUserToDeleteRows = false;
+            this.dgvFacility.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvFacility.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.FacilityID,
             this.FacilityName,
             this.FacilityLocation,
             this.FacilityAvailibility});
-            this.dataGridView1.Location = new System.Drawing.Point(513, 129);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.RowHeadersVisible = false;
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(313, 150);
-            this.dataGridView1.TabIndex = 13;
+            this.dgvFacility.Location = new System.Drawing.Point(513, 129);
+            this.dgvFacility.Name = "dgvFacility";
+            this.dgvFacility.ReadOnly = true;
+            this.dgvFacility.RowHeadersVisible = false;
+            this.dgvFacility.RowHeadersWidth = 51;
+            this.dgvFacility.RowTemplate.Height = 24;
+            this.dgvFacility.Size = new System.Drawing.Size(313, 150);
+            this.dgvFacility.TabIndex = 13;
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.button1);
+            this.groupBox2.Controls.Add(this.btnDelFacility);
             this.groupBox2.Location = new System.Drawing.Point(507, 97);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(326, 246);
@@ -267,14 +267,14 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Delete Facility";
             // 
-            // button1
+            // btnDelFacility
             // 
-            this.button1.Location = new System.Drawing.Point(100, 191);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(115, 46);
-            this.button1.TabIndex = 9;
-            this.button1.Text = "Delete Facility";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnDelFacility.Location = new System.Drawing.Point(100, 191);
+            this.btnDelFacility.Name = "btnDelFacility";
+            this.btnDelFacility.Size = new System.Drawing.Size(115, 46);
+            this.btnDelFacility.TabIndex = 9;
+            this.btnDelFacility.Text = "Delete Facility";
+            this.btnDelFacility.UseVisualStyleBackColor = true;
             // 
             // FacilityID
             // 
@@ -313,8 +313,8 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(838, 450);
-            this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.dgvFacility);
+            this.Controls.Add(this.cmbFacilityType);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -329,7 +329,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.nudRate)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvFacility)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -348,16 +348,16 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cmbFacilityType;
         private System.Windows.Forms.TextBox txtFacilityName;
         private System.Windows.Forms.NumericUpDown nudRate;
         private System.Windows.Forms.TextBox txtFacilityLocation;
         private System.Windows.Forms.CheckBox chkAvailable;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Button btnAddFacility;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgvFacility;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnDelFacility;
         private System.Windows.Forms.DataGridViewTextBoxColumn FacilityID;
         private System.Windows.Forms.DataGridViewTextBoxColumn FacilityName;
         private System.Windows.Forms.DataGridViewTextBoxColumn FacilityLocation;
