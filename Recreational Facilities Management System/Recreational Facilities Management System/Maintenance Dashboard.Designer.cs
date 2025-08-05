@@ -51,7 +51,9 @@
             // 
             // btnViewSchedule
             // 
+            this.btnViewSchedule.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnViewSchedule.Font = new System.Drawing.Font("Verdana", 8.142858F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnViewSchedule.ForeColor = System.Drawing.Color.White;
             this.btnViewSchedule.Location = new System.Drawing.Point(49, 152);
             this.btnViewSchedule.Name = "btnViewSchedule";
             this.btnViewSchedule.Size = new System.Drawing.Size(282, 68);
@@ -61,7 +63,9 @@
             // 
             // btnUpdateStatus
             // 
+            this.btnUpdateStatus.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnUpdateStatus.Font = new System.Drawing.Font("Verdana", 8.142858F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUpdateStatus.ForeColor = System.Drawing.Color.White;
             this.btnUpdateStatus.Location = new System.Drawing.Point(49, 259);
             this.btnUpdateStatus.Name = "btnUpdateStatus";
             this.btnUpdateStatus.Size = new System.Drawing.Size(282, 70);
@@ -71,7 +75,9 @@
             // 
             // btnMngSupplies
             // 
+            this.btnMngSupplies.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMngSupplies.Font = new System.Drawing.Font("Verdana", 8.142858F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMngSupplies.ForeColor = System.Drawing.Color.White;
             this.btnMngSupplies.Location = new System.Drawing.Point(49, 369);
             this.btnMngSupplies.Name = "btnMngSupplies";
             this.btnMngSupplies.Size = new System.Drawing.Size(282, 68);
@@ -81,7 +87,9 @@
             // 
             // btnRepair
             // 
+            this.btnRepair.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRepair.Font = new System.Drawing.Font("Verdana", 8.142858F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRepair.ForeColor = System.Drawing.Color.White;
             this.btnRepair.Location = new System.Drawing.Point(49, 482);
             this.btnRepair.Name = "btnRepair";
             this.btnRepair.Size = new System.Drawing.Size(282, 62);
@@ -91,7 +99,9 @@
             // 
             // btnUpdateProfile
             // 
-            this.btnUpdateProfile.Font = new System.Drawing.Font("Verdana", 8.142858F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUpdateProfile.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnUpdateProfile.Font = new System.Drawing.Font("Verdana", 8.142858F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUpdateProfile.ForeColor = System.Drawing.Color.White;
             this.btnUpdateProfile.Location = new System.Drawing.Point(11, 681);
             this.btnUpdateProfile.Name = "btnUpdateProfile";
             this.btnUpdateProfile.Size = new System.Drawing.Size(182, 54);
@@ -101,7 +111,9 @@
             // 
             // btnLogOut
             // 
-            this.btnLogOut.Font = new System.Drawing.Font("Verdana", 8.142858F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLogOut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLogOut.Font = new System.Drawing.Font("Verdana", 8.142858F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLogOut.ForeColor = System.Drawing.Color.White;
             this.btnLogOut.Location = new System.Drawing.Point(228, 681);
             this.btnLogOut.Name = "btnLogOut";
             this.btnLogOut.Size = new System.Drawing.Size(182, 54);
@@ -111,7 +123,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.DarkGray;
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.panel1.Controls.Add(this.btnUpdateProfile);
             this.panel1.Controls.Add(this.btnLogOut);
             this.panel1.Controls.Add(this.btnViewSchedule);
