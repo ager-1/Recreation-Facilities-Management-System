@@ -140,9 +140,10 @@
             this.panel2.Controls.Add(this.btnUpdateStatus);
             this.panel2.Controls.Add(this.btnMngSupplies);
             this.panel2.Controls.Add(this.btnRepair);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(473, 668);
+            this.panel2.Size = new System.Drawing.Size(448, 666);
             this.panel2.TabIndex = 11;
             // 
             // btnUpdateProfile
@@ -150,7 +151,7 @@
             this.btnUpdateProfile.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnUpdateProfile.Font = new System.Drawing.Font("Verdana", 8.142858F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUpdateProfile.ForeColor = System.Drawing.Color.White;
-            this.btnUpdateProfile.Location = new System.Drawing.Point(15, 592);
+            this.btnUpdateProfile.Location = new System.Drawing.Point(12, 590);
             this.btnUpdateProfile.Name = "btnUpdateProfile";
             this.btnUpdateProfile.Size = new System.Drawing.Size(182, 54);
             this.btnUpdateProfile.TabIndex = 11;

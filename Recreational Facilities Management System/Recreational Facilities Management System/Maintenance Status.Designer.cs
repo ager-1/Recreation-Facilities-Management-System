@@ -188,9 +188,10 @@
             this.panel2.Controls.Add(this.btnUpdateStatus);
             this.panel2.Controls.Add(this.btnMngSupplies);
             this.panel2.Controls.Add(this.btnRepair);
-            this.panel2.Location = new System.Drawing.Point(2, 2);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(411, 673);
+            this.panel2.Size = new System.Drawing.Size(411, 676);
             this.panel2.TabIndex = 1;
             // 
             // Maintenance_Status

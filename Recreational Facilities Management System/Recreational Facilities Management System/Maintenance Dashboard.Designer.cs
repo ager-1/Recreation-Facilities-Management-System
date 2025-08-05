@@ -130,9 +130,10 @@
             this.panel1.Controls.Add(this.btnUpdateStatus);
             this.panel1.Controls.Add(this.btnMngSupplies);
             this.panel1.Controls.Add(this.btnRepair);
-            this.panel1.Location = new System.Drawing.Point(1, -1);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(436, 742);
+            this.panel1.Size = new System.Drawing.Size(436, 741);
             this.panel1.TabIndex = 7;
             // 
             // Maintenance

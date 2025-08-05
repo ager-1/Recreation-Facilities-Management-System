@@ -116,9 +116,10 @@
             this.panel2.Controls.Add(this.btnUpdateStatus);
             this.panel2.Controls.Add(this.btnMngSupplies);
             this.panel2.Controls.Add(this.btnRepair);
-            this.panel2.Location = new System.Drawing.Point(-3, 0);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(443, 705);
+            this.panel2.Size = new System.Drawing.Size(443, 680);
             this.panel2.TabIndex = 8;
             // 
             // btnUpdateProfile
@@ -197,7 +198,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1180, 694);
+            this.ClientSize = new System.Drawing.Size(1127, 680);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.btnSubmit);
             this.Controls.Add(this.label3);
