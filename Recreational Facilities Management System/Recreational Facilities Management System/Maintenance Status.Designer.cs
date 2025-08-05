@@ -48,6 +48,7 @@
             // 
             // dataGridView1
             // 
+            this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
@@ -55,11 +56,11 @@
             this.Column3,
             this.Column4,
             this.Column5});
-            this.dataGridView1.Location = new System.Drawing.Point(407, 2);
+            this.dataGridView1.Location = new System.Drawing.Point(419, 2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 72;
             this.dataGridView1.RowTemplate.Height = 31;
-            this.dataGridView1.Size = new System.Drawing.Size(918, 200);
+            this.dataGridView1.Size = new System.Drawing.Size(916, 200);
             this.dataGridView1.TabIndex = 1;
             // 
             // Column1
@@ -99,7 +100,7 @@
             // 
             // btnSave
             // 
-            this.btnSave.Location = new System.Drawing.Point(773, 625);
+            this.btnSave.Location = new System.Drawing.Point(837, 614);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(131, 50);
             this.btnSave.TabIndex = 2;
@@ -196,7 +197,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1332, 679);
+            this.ClientSize = new System.Drawing.Size(1341, 676);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.dataGridView1);
