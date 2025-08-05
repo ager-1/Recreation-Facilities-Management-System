@@ -32,18 +32,18 @@
             this.label1 = new System.Windows.Forms.Label();
             this.lblName = new System.Windows.Forms.Label();
             this.btnManageUserAcc = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.btnSportsAndRecreational = new System.Windows.Forms.Button();
+            this.btnMaintenance = new System.Windows.Forms.Button();
+            this.btnRepairAndReplace = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.panel1.Controls.Add(this.button3);
-            this.panel1.Controls.Add(this.button2);
-            this.panel1.Controls.Add(this.button1);
+            this.panel1.Controls.Add(this.btnRepairAndReplace);
+            this.panel1.Controls.Add(this.btnMaintenance);
+            this.panel1.Controls.Add(this.btnSportsAndRecreational);
             this.panel1.Controls.Add(this.btnManageUserAcc);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
@@ -84,44 +84,44 @@
             this.btnManageUserAcc.Text = "User Accounts";
             this.btnManageUserAcc.UseVisualStyleBackColor = false;
             // 
-            // button1
+            // btnSportsAndRecreational
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Segoe UI Semibold", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(22, 156);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(155, 50);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "Sports and Recreational Facilities";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnSportsAndRecreational.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnSportsAndRecreational.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSportsAndRecreational.Font = new System.Drawing.Font("Segoe UI Semibold", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSportsAndRecreational.ForeColor = System.Drawing.Color.White;
+            this.btnSportsAndRecreational.Location = new System.Drawing.Point(22, 156);
+            this.btnSportsAndRecreational.Name = "btnSportsAndRecreational";
+            this.btnSportsAndRecreational.Size = new System.Drawing.Size(155, 50);
+            this.btnSportsAndRecreational.TabIndex = 1;
+            this.btnSportsAndRecreational.Text = "Sports and Recreational Facilities";
+            this.btnSportsAndRecreational.UseVisualStyleBackColor = false;
             // 
-            // button2
+            // btnMaintenance
             // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Segoe UI Semibold", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(22, 241);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(155, 50);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "Maintenance Staff and Schedule";
-            this.button2.UseVisualStyleBackColor = false;
+            this.btnMaintenance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnMaintenance.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMaintenance.Font = new System.Drawing.Font("Segoe UI Semibold", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMaintenance.ForeColor = System.Drawing.Color.White;
+            this.btnMaintenance.Location = new System.Drawing.Point(22, 241);
+            this.btnMaintenance.Name = "btnMaintenance";
+            this.btnMaintenance.Size = new System.Drawing.Size(155, 50);
+            this.btnMaintenance.TabIndex = 2;
+            this.btnMaintenance.Text = "Maintenance Staff and Schedule";
+            this.btnMaintenance.UseVisualStyleBackColor = false;
             // 
-            // button3
+            // btnRepairAndReplace
             // 
-            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Segoe UI Semibold", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(22, 321);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(155, 50);
-            this.button3.TabIndex = 3;
-            this.button3.Text = "Repair and Replacement";
-            this.button3.UseVisualStyleBackColor = false;
+            this.btnRepairAndReplace.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnRepairAndReplace.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRepairAndReplace.Font = new System.Drawing.Font("Segoe UI Semibold", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRepairAndReplace.ForeColor = System.Drawing.Color.White;
+            this.btnRepairAndReplace.Location = new System.Drawing.Point(22, 321);
+            this.btnRepairAndReplace.Name = "btnRepairAndReplace";
+            this.btnRepairAndReplace.Size = new System.Drawing.Size(155, 50);
+            this.btnRepairAndReplace.TabIndex = 3;
+            this.btnRepairAndReplace.Text = "Repair and Replacement";
+            this.btnRepairAndReplace.UseVisualStyleBackColor = false;
             // 
             // Manager
             // 
@@ -147,8 +147,8 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lblName;
         private System.Windows.Forms.Button btnManageUserAcc;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnRepairAndReplace;
+        private System.Windows.Forms.Button btnMaintenance;
+        private System.Windows.Forms.Button btnSportsAndRecreational;
     }
 }
