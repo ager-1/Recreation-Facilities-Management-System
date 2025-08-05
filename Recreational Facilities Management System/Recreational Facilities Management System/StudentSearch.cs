@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Recreational_Facilities_Management_System
 {
-    public partial class Student : Form
+    public partial class StudentSearch : Form
     {
-        public Student()
+        public StudentSearch()
         {
             InitializeComponent();
         }
