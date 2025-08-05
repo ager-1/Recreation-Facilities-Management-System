@@ -1,6 +1,6 @@
 ﻿namespace Recreational_Facilities_Management_System
 {
-    partial class Maintenance_Schedule
+    partial class Maintenance_Status
     {
         /// <summary>
         /// Required designer variable.
@@ -33,20 +33,18 @@
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.label1 = new System.Windows.Forms.Label();
-            this.btnFilter = new System.Windows.Forms.Button();
-            this.btnRefresh = new System.Windows.Forms.Button();
+            this.Column4 = new System.Windows.Forms.DataGridViewComboBoxColumn();
+            this.Column5 = new System.Windows.Forms.DataGridViewComboBoxColumn();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.DarkGray;
-            this.panel1.Location = new System.Drawing.Point(-2, 0);
+            this.panel1.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.panel1.Location = new System.Drawing.Point(2, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(360, 820);
+            this.panel1.Size = new System.Drawing.Size(399, 820);
             this.panel1.TabIndex = 0;
             // 
             // dataGridView1
@@ -56,25 +54,25 @@
             this.Column1,
             this.Column2,
             this.Column3,
-            this.Column4});
-            this.dataGridView1.Location = new System.Drawing.Point(381, 228);
+            this.Column4,
+            this.Column5});
+            this.dataGridView1.Location = new System.Drawing.Point(407, 2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 72;
             this.dataGridView1.RowTemplate.Height = 31;
-            this.dataGridView1.Size = new System.Drawing.Size(774, 578);
+            this.dataGridView1.Size = new System.Drawing.Size(918, 200);
             this.dataGridView1.TabIndex = 1;
-            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // Column1
             // 
-            this.Column1.HeaderText = "Facility Name";
+            this.Column1.HeaderText = "Facility";
             this.Column1.MinimumWidth = 9;
             this.Column1.Name = "Column1";
             this.Column1.Width = 175;
             // 
             // Column2
             // 
-            this.Column2.HeaderText = "Date";
+            this.Column2.HeaderText = "Scheduled Date";
             this.Column2.MinimumWidth = 9;
             this.Column2.Name = "Column2";
             this.Column2.Width = 175;
@@ -88,61 +86,39 @@
             // 
             // Column4
             // 
-            this.Column4.HeaderText = "Status";
+            this.Column4.HeaderText = "Current Status";
             this.Column4.MinimumWidth = 9;
             this.Column4.Name = "Column4";
             this.Column4.Width = 175;
             // 
-            // dateTimePicker1
+            // Column5
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(430, 172);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(343, 29);
-            this.dateTimePicker1.TabIndex = 2;
+            this.Column5.HeaderText = "Current Status";
+            this.Column5.MinimumWidth = 9;
+            this.Column5.Name = "Column5";
+            this.Column5.Width = 175;
             // 
-            // label1
+            // button1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(376, 172);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(64, 25);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "Date: ";
+            this.button1.Location = new System.Drawing.Point(789, 779);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(131, 50);
+            this.button1.TabIndex = 2;
+            this.button1.Text = "Save";
+            this.button1.UseVisualStyleBackColor = true;
             // 
-            // btnFilter
-            // 
-            this.btnFilter.Location = new System.Drawing.Point(801, 168);
-            this.btnFilter.Name = "btnFilter";
-            this.btnFilter.Size = new System.Drawing.Size(110, 33);
-            this.btnFilter.TabIndex = 4;
-            this.btnFilter.Text = "Filter";
-            this.btnFilter.UseVisualStyleBackColor = true;
-            // 
-            // btnRefresh
-            // 
-            this.btnRefresh.Location = new System.Drawing.Point(963, 168);
-            this.btnRefresh.Name = "btnRefresh";
-            this.btnRefresh.Size = new System.Drawing.Size(110, 33);
-            this.btnRefresh.TabIndex = 5;
-            this.btnRefresh.Text = "Refresh";
-            this.btnRefresh.UseVisualStyleBackColor = true;
-            // 
-            // Maintenance_Schedule
+            // Maintenance_Status
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1210, 818);
-            this.Controls.Add(this.btnRefresh);
-            this.Controls.Add(this.btnFilter);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.dateTimePicker1);
+            this.ClientSize = new System.Drawing.Size(1344, 841);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.panel1);
-            this.Name = "Maintenance_Schedule";
-            this.Text = "Maintenance_Schedule";
+            this.Name = "Maintenance_Status";
+            this.Text = "Maintenance_Status";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -153,10 +129,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button btnFilter;
-        private System.Windows.Forms.Button btnRefresh;
+        private System.Windows.Forms.DataGridViewComboBoxColumn Column4;
+        private System.Windows.Forms.DataGridViewComboBoxColumn Column5;
+        private System.Windows.Forms.Button button1;
     }
 }
