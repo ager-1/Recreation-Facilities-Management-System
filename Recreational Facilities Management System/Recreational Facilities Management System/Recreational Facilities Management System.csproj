@@ -52,6 +52,12 @@
     <Compile Include="Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
+    <Compile Include="Maintenance  CleaningSupplies.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Maintenance  CleaningSupplies.Designer.cs">
+      <DependentUpon>Maintenance  CleaningSupplies.cs</DependentUpon>
+    </Compile>
     <Compile Include="Maintenance Schedule.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -72,6 +78,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Maintenance  CleaningSupplies.resx">
+      <DependentUpon>Maintenance  CleaningSupplies.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Maintenance Schedule.resx">
       <DependentUpon>Maintenance Schedule.cs</DependentUpon>
     </EmbeddedResource>
