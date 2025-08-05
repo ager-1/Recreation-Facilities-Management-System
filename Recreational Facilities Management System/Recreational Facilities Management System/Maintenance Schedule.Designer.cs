@@ -46,7 +46,7 @@
             this.panel1.BackColor = System.Drawing.Color.DarkGray;
             this.panel1.Location = new System.Drawing.Point(-2, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(360, 820);
+            this.panel1.Size = new System.Drawing.Size(344, 806);
             this.panel1.TabIndex = 0;
             // 
             // dataGridView1
@@ -103,7 +103,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(376, 172);
+            this.label1.Location = new System.Drawing.Point(360, 172);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(64, 25);
             this.label1.TabIndex = 3;
@@ -131,7 +131,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1210, 818);
+            this.ClientSize = new System.Drawing.Size(1178, 812);
             this.Controls.Add(this.btnRefresh);
             this.Controls.Add(this.btnFilter);
             this.Controls.Add(this.label1);

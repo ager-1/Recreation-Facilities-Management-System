@@ -38,7 +38,7 @@
             this.txtbxEmail = new System.Windows.Forms.TextBox();
             this.txtbxPass = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnUpdate = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -89,28 +89,28 @@
             // 
             // txtbxName
             // 
-            this.txtbxName.Location = new System.Drawing.Point(770, 204);
+            this.txtbxName.Location = new System.Drawing.Point(722, 204);
             this.txtbxName.Name = "txtbxName";
             this.txtbxName.Size = new System.Drawing.Size(100, 29);
             this.txtbxName.TabIndex = 5;
             // 
             // txtbxNo
             // 
-            this.txtbxNo.Location = new System.Drawing.Point(770, 290);
+            this.txtbxNo.Location = new System.Drawing.Point(722, 294);
             this.txtbxNo.Name = "txtbxNo";
             this.txtbxNo.Size = new System.Drawing.Size(100, 29);
             this.txtbxNo.TabIndex = 6;
             // 
             // txtbxEmail
             // 
-            this.txtbxEmail.Location = new System.Drawing.Point(770, 384);
+            this.txtbxEmail.Location = new System.Drawing.Point(722, 383);
             this.txtbxEmail.Name = "txtbxEmail";
             this.txtbxEmail.Size = new System.Drawing.Size(100, 29);
             this.txtbxEmail.TabIndex = 7;
             // 
             // txtbxPass
             // 
-            this.txtbxPass.Location = new System.Drawing.Point(779, 489);
+            this.txtbxPass.Location = new System.Drawing.Point(722, 480);
             this.txtbxPass.Name = "txtbxPass";
             this.txtbxPass.Size = new System.Drawing.Size(100, 29);
             this.txtbxPass.TabIndex = 8;
@@ -123,21 +123,21 @@
             this.panel1.Size = new System.Drawing.Size(410, 714);
             this.panel1.TabIndex = 9;
             // 
-            // button1
+            // btnUpdate
             // 
-            this.button1.Location = new System.Drawing.Point(604, 595);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(162, 47);
-            this.button1.TabIndex = 10;
-            this.button1.Text = "Update";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnUpdate.Location = new System.Drawing.Point(604, 595);
+            this.btnUpdate.Name = "btnUpdate";
+            this.btnUpdate.Size = new System.Drawing.Size(162, 47);
+            this.btnUpdate.TabIndex = 10;
+            this.btnUpdate.Text = "Update";
+            this.btnUpdate.UseVisualStyleBackColor = true;
             // 
             // Maintenance_Profile
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1090, 710);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnUpdate);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.txtbxPass);
             this.Controls.Add(this.txtbxEmail);
@@ -167,6 +167,6 @@
         private System.Windows.Forms.TextBox txtbxEmail;
         private System.Windows.Forms.TextBox txtbxPass;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnUpdate;
     }
 }

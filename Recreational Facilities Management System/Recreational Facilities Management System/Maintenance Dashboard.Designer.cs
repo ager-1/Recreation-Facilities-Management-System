@@ -29,12 +29,12 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
+            this.btnViewSchedule = new System.Windows.Forms.Button();
+            this.btnUpdateStatus = new System.Windows.Forms.Button();
+            this.btnMngSupplies = new System.Windows.Forms.Button();
+            this.btnRepair = new System.Windows.Forms.Button();
+            this.btnUpdateProfile = new System.Windows.Forms.Button();
+            this.btnLogOut = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -49,75 +49,75 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Maintenance Staff Dashboard ";
             // 
-            // button1
+            // btnViewSchedule
             // 
-            this.button1.Font = new System.Drawing.Font("Verdana", 8.142858F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(49, 152);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(282, 68);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "View Maintenance Schedule";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnViewSchedule.Font = new System.Drawing.Font("Verdana", 8.142858F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnViewSchedule.Location = new System.Drawing.Point(49, 152);
+            this.btnViewSchedule.Name = "btnViewSchedule";
+            this.btnViewSchedule.Size = new System.Drawing.Size(282, 68);
+            this.btnViewSchedule.TabIndex = 1;
+            this.btnViewSchedule.Text = "View Maintenance Schedule";
+            this.btnViewSchedule.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // btnUpdateStatus
             // 
-            this.button2.Font = new System.Drawing.Font("Verdana", 8.142858F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(49, 259);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(282, 70);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "Update Maintenance Status";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnUpdateStatus.Font = new System.Drawing.Font("Verdana", 8.142858F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUpdateStatus.Location = new System.Drawing.Point(49, 259);
+            this.btnUpdateStatus.Name = "btnUpdateStatus";
+            this.btnUpdateStatus.Size = new System.Drawing.Size(282, 70);
+            this.btnUpdateStatus.TabIndex = 2;
+            this.btnUpdateStatus.Text = "Update Maintenance Status";
+            this.btnUpdateStatus.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // btnMngSupplies
             // 
-            this.button3.Font = new System.Drawing.Font("Verdana", 8.142858F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(49, 369);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(282, 68);
-            this.button3.TabIndex = 3;
-            this.button3.Text = "Manage Cleaning Supplies";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnMngSupplies.Font = new System.Drawing.Font("Verdana", 8.142858F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMngSupplies.Location = new System.Drawing.Point(49, 369);
+            this.btnMngSupplies.Name = "btnMngSupplies";
+            this.btnMngSupplies.Size = new System.Drawing.Size(282, 68);
+            this.btnMngSupplies.TabIndex = 3;
+            this.btnMngSupplies.Text = "Manage Cleaning Supplies";
+            this.btnMngSupplies.UseVisualStyleBackColor = true;
             // 
-            // button4
+            // btnRepair
             // 
-            this.button4.Font = new System.Drawing.Font("Verdana", 8.142858F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(49, 482);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(282, 62);
-            this.button4.TabIndex = 4;
-            this.button4.Text = "Raise Repair/Replacement Request";
-            this.button4.UseVisualStyleBackColor = true;
+            this.btnRepair.Font = new System.Drawing.Font("Verdana", 8.142858F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRepair.Location = new System.Drawing.Point(49, 482);
+            this.btnRepair.Name = "btnRepair";
+            this.btnRepair.Size = new System.Drawing.Size(282, 62);
+            this.btnRepair.TabIndex = 4;
+            this.btnRepair.Text = "Raise Repair/Replacement Request";
+            this.btnRepair.UseVisualStyleBackColor = true;
             // 
-            // button5
+            // btnUpdateProfile
             // 
-            this.button5.Font = new System.Drawing.Font("Verdana", 8.142858F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.Location = new System.Drawing.Point(3, 690);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(188, 49);
-            this.button5.TabIndex = 5;
-            this.button5.Text = "Update Profile";
-            this.button5.UseVisualStyleBackColor = true;
+            this.btnUpdateProfile.Font = new System.Drawing.Font("Verdana", 8.142858F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUpdateProfile.Location = new System.Drawing.Point(11, 681);
+            this.btnUpdateProfile.Name = "btnUpdateProfile";
+            this.btnUpdateProfile.Size = new System.Drawing.Size(182, 54);
+            this.btnUpdateProfile.TabIndex = 5;
+            this.btnUpdateProfile.Text = "Update Profile";
+            this.btnUpdateProfile.UseVisualStyleBackColor = true;
             // 
-            // button6
+            // btnLogOut
             // 
-            this.button6.Font = new System.Drawing.Font("Verdana", 8.142858F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.Location = new System.Drawing.Point(251, 685);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(182, 54);
-            this.button6.TabIndex = 6;
-            this.button6.Text = "Logout";
-            this.button6.UseVisualStyleBackColor = true;
+            this.btnLogOut.Font = new System.Drawing.Font("Verdana", 8.142858F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLogOut.Location = new System.Drawing.Point(228, 681);
+            this.btnLogOut.Name = "btnLogOut";
+            this.btnLogOut.Size = new System.Drawing.Size(182, 54);
+            this.btnLogOut.TabIndex = 6;
+            this.btnLogOut.Text = "Logout";
+            this.btnLogOut.UseVisualStyleBackColor = true;
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.DarkGray;
-            this.panel1.Controls.Add(this.button5);
-            this.panel1.Controls.Add(this.button6);
-            this.panel1.Controls.Add(this.button1);
-            this.panel1.Controls.Add(this.button2);
-            this.panel1.Controls.Add(this.button3);
-            this.panel1.Controls.Add(this.button4);
+            this.panel1.Controls.Add(this.btnUpdateProfile);
+            this.panel1.Controls.Add(this.btnLogOut);
+            this.panel1.Controls.Add(this.btnViewSchedule);
+            this.panel1.Controls.Add(this.btnUpdateStatus);
+            this.panel1.Controls.Add(this.btnMngSupplies);
+            this.panel1.Controls.Add(this.btnRepair);
             this.panel1.Location = new System.Drawing.Point(1, -1);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(436, 742);
@@ -141,12 +141,12 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button btnViewSchedule;
+        private System.Windows.Forms.Button btnUpdateStatus;
+        private System.Windows.Forms.Button btnMngSupplies;
+        private System.Windows.Forms.Button btnRepair;
+        private System.Windows.Forms.Button btnUpdateProfile;
+        private System.Windows.Forms.Button btnLogOut;
         private System.Windows.Forms.Panel panel1;
     }
 }

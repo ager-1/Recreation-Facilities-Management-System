@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtbxFacility = new System.Windows.Forms.TextBox();
+            this.txtbxDesc = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.cmbRequestType = new System.Windows.Forms.ComboBox();
@@ -46,20 +46,20 @@
             this.panel1.Size = new System.Drawing.Size(331, 737);
             this.panel1.TabIndex = 0;
             // 
-            // textBox1
+            // txtbxFacility
             // 
-            this.textBox1.Location = new System.Drawing.Point(611, 104);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 29);
-            this.textBox1.TabIndex = 1;
+            this.txtbxFacility.Location = new System.Drawing.Point(611, 104);
+            this.txtbxFacility.Name = "txtbxFacility";
+            this.txtbxFacility.Size = new System.Drawing.Size(100, 29);
+            this.txtbxFacility.TabIndex = 1;
             // 
-            // textBox2
+            // txtbxDesc
             // 
-            this.textBox2.Location = new System.Drawing.Point(371, 227);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(467, 217);
-            this.textBox2.TabIndex = 2;
+            this.txtbxDesc.Location = new System.Drawing.Point(371, 239);
+            this.txtbxDesc.Multiline = true;
+            this.txtbxDesc.Name = "txtbxDesc";
+            this.txtbxDesc.Size = new System.Drawing.Size(467, 217);
+            this.txtbxDesc.TabIndex = 2;
             // 
             // label1
             // 
@@ -118,8 +118,8 @@
             this.Controls.Add(this.cmbRequestType);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtbxDesc);
+            this.Controls.Add(this.txtbxFacility);
             this.Controls.Add(this.panel1);
             this.Name = "Repair_Request";
             this.Text = "Repair_Request";
@@ -131,8 +131,8 @@
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtbxFacility;
+        private System.Windows.Forms.TextBox txtbxDesc;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ComboBox cmbRequestType;
