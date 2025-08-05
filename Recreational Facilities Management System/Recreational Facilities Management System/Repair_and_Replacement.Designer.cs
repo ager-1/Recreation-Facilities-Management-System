@@ -1,6 +1,6 @@
 ﻿namespace Recreational_Facilities_Management_System
 {
-    partial class Maintenance_Staff_and_Schedule
+    partial class Repair_and_Replacement
     {
         /// <summary>
         /// Required designer variable.
@@ -33,17 +33,21 @@
             this.btnManageUserAcc = new System.Windows.Forms.Button();
             this.btnSportsAndRecreational = new System.Windows.Forms.Button();
             this.btnMaintenance = new System.Windows.Forms.Button();
+            this.dgvRequests = new System.Windows.Forms.DataGridView();
             this.lable1 = new System.Windows.Forms.Label();
+            this.btnApprove = new System.Windows.Forms.Button();
+            this.btnReject = new System.Windows.Forms.Button();
+            this.lblRequestDetails = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.btnAssignTask = new System.Windows.Forms.Button();
-            this.rtbNotes = new System.Windows.Forms.RichTextBox();
-            this.cmbFacility = new System.Windows.Forms.ComboBox();
-            this.cmbMaintenanceStaff = new System.Windows.Forms.ComboBox();
-            this.dtpSchedule = new System.Windows.Forms.DateTimePicker();
+            this.RequestID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.RequestName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.FacilityName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.RequestType = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.RequestStatus = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvRequests)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -57,7 +61,7 @@
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(200, 450);
-            this.panel1.TabIndex = 2;
+            this.panel1.TabIndex = 3;
             // 
             // btnRepairAndReplace
             // 
@@ -111,114 +115,148 @@
             this.btnMaintenance.Text = "Maintenance Staff and Schedule";
             this.btnMaintenance.UseVisualStyleBackColor = false;
             // 
+            // dgvRequests
+            // 
+            this.dgvRequests.AllowUserToAddRows = false;
+            this.dgvRequests.AllowUserToDeleteRows = false;
+            this.dgvRequests.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvRequests.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.RequestID,
+            this.RequestName,
+            this.FacilityName,
+            this.RequestType,
+            this.RequestStatus});
+            this.dgvRequests.Location = new System.Drawing.Point(217, 52);
+            this.dgvRequests.Name = "dgvRequests";
+            this.dgvRequests.ReadOnly = true;
+            this.dgvRequests.RowHeadersVisible = false;
+            this.dgvRequests.RowHeadersWidth = 51;
+            this.dgvRequests.RowTemplate.Height = 24;
+            this.dgvRequests.Size = new System.Drawing.Size(562, 175);
+            this.dgvRequests.TabIndex = 4;
+            // 
             // lable1
             // 
             this.lable1.AutoSize = true;
             this.lable1.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lable1.Location = new System.Drawing.Point(229, 29);
+            this.lable1.Location = new System.Drawing.Point(214, 21);
             this.lable1.Name = "lable1";
-            this.lable1.Size = new System.Drawing.Size(72, 28);
-            this.lable1.TabIndex = 8;
-            this.lable1.Text = "Facility";
+            this.lable1.Size = new System.Drawing.Size(175, 28);
+            this.lable1.TabIndex = 9;
+            this.lable1.Text = "Pending Requests";
+            // 
+            // btnApprove
+            // 
+            this.btnApprove.Location = new System.Drawing.Point(322, 384);
+            this.btnApprove.Name = "btnApprove";
+            this.btnApprove.Size = new System.Drawing.Size(104, 46);
+            this.btnApprove.TabIndex = 13;
+            this.btnApprove.Text = "Approve";
+            this.btnApprove.UseVisualStyleBackColor = true;
+            // 
+            // btnReject
+            // 
+            this.btnReject.Location = new System.Drawing.Point(536, 384);
+            this.btnReject.Name = "btnReject";
+            this.btnReject.Size = new System.Drawing.Size(104, 46);
+            this.btnReject.TabIndex = 14;
+            this.btnReject.Text = "Reject";
+            this.btnReject.UseVisualStyleBackColor = true;
+            // 
+            // lblRequestDetails
+            // 
+            this.lblRequestDetails.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lblRequestDetails.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRequestDetails.Location = new System.Drawing.Point(217, 279);
+            this.lblRequestDetails.Name = "lblRequestDetails";
+            this.lblRequestDetails.Size = new System.Drawing.Size(562, 93);
+            this.lblRequestDetails.TabIndex = 15;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(229, 89);
+            this.label1.Location = new System.Drawing.Point(214, 250);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(176, 28);
-            this.label1.TabIndex = 9;
-            this.label1.Text = "Maintenance Staff";
+            this.label1.Size = new System.Drawing.Size(152, 28);
+            this.label1.TabIndex = 17;
+            this.label1.Text = "Request Details";
             // 
-            // label2
+            // RequestID
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(229, 157);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(268, 28);
-            this.label2.TabIndex = 10;
-            this.label2.Text = "Maintenance Date and Time";
+            this.RequestID.HeaderText = "RequestID";
+            this.RequestID.MinimumWidth = 6;
+            this.RequestID.Name = "RequestID";
+            this.RequestID.ReadOnly = true;
+            this.RequestID.Width = 125;
             // 
-            // label3
+            // RequestName
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(229, 217);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(150, 28);
-            this.label3.TabIndex = 11;
-            this.label3.Text = "Optional Notes";
+            this.RequestName.HeaderText = "RequestName";
+            this.RequestName.MinimumWidth = 6;
+            this.RequestName.Name = "RequestName";
+            this.RequestName.ReadOnly = true;
+            this.RequestName.Width = 125;
             // 
-            // btnAssignTask
+            // FacilityName
             // 
-            this.btnAssignTask.Location = new System.Drawing.Point(418, 345);
-            this.btnAssignTask.Name = "btnAssignTask";
-            this.btnAssignTask.Size = new System.Drawing.Size(104, 46);
-            this.btnAssignTask.TabIndex = 12;
-            this.btnAssignTask.Text = "Assign Task";
-            this.btnAssignTask.UseVisualStyleBackColor = true;
+            this.FacilityName.HeaderText = "FacilityName";
+            this.FacilityName.MinimumWidth = 6;
+            this.FacilityName.Name = "FacilityName";
+            this.FacilityName.ReadOnly = true;
+            this.FacilityName.Width = 125;
             // 
-            // rtbNotes
+            // RequestType
             // 
-            this.rtbNotes.Location = new System.Drawing.Point(528, 217);
-            this.rtbNotes.Name = "rtbNotes";
-            this.rtbNotes.Size = new System.Drawing.Size(278, 98);
-            this.rtbNotes.TabIndex = 13;
-            this.rtbNotes.Text = "";
+            this.RequestType.HeaderText = "RequestType";
+            this.RequestType.MinimumWidth = 6;
+            this.RequestType.Name = "RequestType";
+            this.RequestType.ReadOnly = true;
+            this.RequestType.Width = 125;
             // 
-            // cmbFacility
+            // RequestStatus
             // 
-            this.cmbFacility.FormattingEnabled = true;
-            this.cmbFacility.Location = new System.Drawing.Point(528, 31);
-            this.cmbFacility.Name = "cmbFacility";
-            this.cmbFacility.Size = new System.Drawing.Size(121, 24);
-            this.cmbFacility.TabIndex = 14;
-            // 
-            // cmbMaintenanceStaff
-            // 
-            this.cmbMaintenanceStaff.FormattingEnabled = true;
-            this.cmbMaintenanceStaff.Location = new System.Drawing.Point(528, 94);
-            this.cmbMaintenanceStaff.Name = "cmbMaintenanceStaff";
-            this.cmbMaintenanceStaff.Size = new System.Drawing.Size(121, 24);
-            this.cmbMaintenanceStaff.TabIndex = 15;
-            // 
-            // dtpSchedule
-            // 
-            this.dtpSchedule.Location = new System.Drawing.Point(528, 160);
-            this.dtpSchedule.Name = "dtpSchedule";
-            this.dtpSchedule.Size = new System.Drawing.Size(278, 22);
-            this.dtpSchedule.TabIndex = 16;
+            this.RequestStatus.HeaderText = "RequestStatus";
+            this.RequestStatus.MinimumWidth = 6;
+            this.RequestStatus.Name = "RequestStatus";
+            this.RequestStatus.ReadOnly = true;
+            this.RequestStatus.Width = 125;
             // 
             // groupBox1
             // 
             this.groupBox1.Location = new System.Drawing.Point(207, 13);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(627, 405);
-            this.groupBox1.TabIndex = 17;
+            this.groupBox1.Size = new System.Drawing.Size(581, 220);
+            this.groupBox1.TabIndex = 18;
             this.groupBox1.TabStop = false;
             // 
-            // Maintenance_Staff_and_Schedule
+            // groupBox2
+            // 
+            this.groupBox2.Location = new System.Drawing.Point(207, 242);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(581, 196);
+            this.groupBox2.TabIndex = 19;
+            this.groupBox2.TabStop = false;
+            // 
+            // Repair_and_Replacement
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(846, 450);
-            this.Controls.Add(this.dtpSchedule);
-            this.Controls.Add(this.cmbMaintenanceStaff);
-            this.Controls.Add(this.cmbFacility);
-            this.Controls.Add(this.rtbNotes);
-            this.Controls.Add(this.btnAssignTask);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
+            this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.label1);
+            this.Controls.Add(this.lblRequestDetails);
+            this.Controls.Add(this.btnReject);
+            this.Controls.Add(this.btnApprove);
             this.Controls.Add(this.lable1);
+            this.Controls.Add(this.dgvRequests);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.groupBox2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Name = "Maintenance_Staff_and_Schedule";
-            this.Text = "Maintenance_Staff_and_Schedule";
+            this.Name = "Repair_and_Replacement";
+            this.Text = "Repair_and_Replacement";
             this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvRequests)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -231,15 +269,18 @@
         private System.Windows.Forms.Button btnManageUserAcc;
         private System.Windows.Forms.Button btnSportsAndRecreational;
         private System.Windows.Forms.Button btnMaintenance;
+        private System.Windows.Forms.DataGridView dgvRequests;
         private System.Windows.Forms.Label lable1;
+        private System.Windows.Forms.Button btnApprove;
+        private System.Windows.Forms.Button btnReject;
+        private System.Windows.Forms.Label lblRequestDetails;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button btnAssignTask;
-        private System.Windows.Forms.RichTextBox rtbNotes;
-        private System.Windows.Forms.ComboBox cmbFacility;
-        private System.Windows.Forms.ComboBox cmbMaintenanceStaff;
-        private System.Windows.Forms.DateTimePicker dtpSchedule;
+        private System.Windows.Forms.DataGridViewTextBoxColumn RequestID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn RequestName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn FacilityName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn RequestType;
+        private System.Windows.Forms.DataGridViewTextBoxColumn RequestStatus;
         private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox groupBox2;
     }
 }

@@ -323,6 +323,7 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.groupBox2);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "Manage_Sports_and_Recreational_Facilities";
             this.Text = "Manage_Sports_and_Recreational_Facilities";
             this.panel1.ResumeLayout(false);
