@@ -45,9 +45,18 @@
             this.chkAvailable = new System.Windows.Forms.CheckBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.btnAddFacility = new System.Windows.Forms.Button();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.FacilityID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.FacilityName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.FacilityLocation = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.FacilityAvailibility = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudRate)).BeginInit();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -119,11 +128,11 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(218, 97);
+            this.label1.Location = new System.Drawing.Point(220, 120);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(132, 28);
+            this.label1.Size = new System.Drawing.Size(66, 28);
             this.label1.TabIndex = 2;
-            this.label1.Text = "Facility Name";
+            this.label1.Text = "Name";
             // 
             // label2
             // 
@@ -139,27 +148,27 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(218, 137);
+            this.label3.Location = new System.Drawing.Point(220, 160);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(140, 28);
+            this.label3.Size = new System.Drawing.Size(82, 28);
             this.label3.TabIndex = 4;
-            this.label3.Text = "Rate per Hour";
+            this.label3.Text = "Rate/Hr";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(218, 180);
+            this.label4.Location = new System.Drawing.Point(220, 203);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(132, 28);
+            this.label4.Size = new System.Drawing.Size(89, 28);
             this.label4.TabIndex = 5;
-            this.label4.Text = "Location Info";
+            this.label4.Text = "Location";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(218, 225);
+            this.label5.Location = new System.Drawing.Point(220, 248);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(109, 28);
             this.label5.TabIndex = 6;
@@ -178,21 +187,21 @@
             // 
             // txtFacilityName
             // 
-            this.txtFacilityName.Location = new System.Drawing.Point(357, 104);
+            this.txtFacilityName.Location = new System.Drawing.Point(124, 30);
             this.txtFacilityName.Name = "txtFacilityName";
             this.txtFacilityName.Size = new System.Drawing.Size(141, 22);
             this.txtFacilityName.TabIndex = 8;
             // 
             // nudRate
             // 
-            this.nudRate.Location = new System.Drawing.Point(365, 144);
+            this.nudRate.Location = new System.Drawing.Point(124, 71);
             this.nudRate.Name = "nudRate";
             this.nudRate.Size = new System.Drawing.Size(120, 22);
             this.nudRate.TabIndex = 9;
             // 
             // txtFacilityLocation
             // 
-            this.txtFacilityLocation.Location = new System.Drawing.Point(357, 182);
+            this.txtFacilityLocation.Location = new System.Drawing.Point(124, 108);
             this.txtFacilityLocation.Name = "txtFacilityLocation";
             this.txtFacilityLocation.Size = new System.Drawing.Size(141, 22);
             this.txtFacilityLocation.TabIndex = 10;
@@ -200,7 +209,7 @@
             // chkAvailable
             // 
             this.chkAvailable.AutoSize = true;
-            this.chkAvailable.Location = new System.Drawing.Point(357, 233);
+            this.chkAvailable.Location = new System.Drawing.Point(124, 159);
             this.chkAvailable.Name = "chkAvailable";
             this.chkAvailable.Size = new System.Drawing.Size(18, 17);
             this.chkAvailable.TabIndex = 11;
@@ -209,9 +218,13 @@
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.btnAddFacility);
-            this.groupBox1.Location = new System.Drawing.Point(206, 74);
+            this.groupBox1.Controls.Add(this.chkAvailable);
+            this.groupBox1.Controls.Add(this.txtFacilityName);
+            this.groupBox1.Controls.Add(this.txtFacilityLocation);
+            this.groupBox1.Controls.Add(this.nudRate);
+            this.groupBox1.Location = new System.Drawing.Point(208, 97);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(305, 250);
+            this.groupBox1.Size = new System.Drawing.Size(293, 246);
             this.groupBox1.TabIndex = 12;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Add Facility";
@@ -225,15 +238,82 @@
             this.btnAddFacility.Text = "Add Facility";
             this.btnAddFacility.UseVisualStyleBackColor = true;
             // 
+            // dataGridView1
+            // 
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.FacilityID,
+            this.FacilityName,
+            this.FacilityLocation,
+            this.FacilityAvailibility});
+            this.dataGridView1.Location = new System.Drawing.Point(513, 129);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
+            this.dataGridView1.RowHeadersVisible = false;
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.RowTemplate.Height = 24;
+            this.dataGridView1.Size = new System.Drawing.Size(313, 150);
+            this.dataGridView1.TabIndex = 13;
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.button1);
+            this.groupBox2.Location = new System.Drawing.Point(507, 97);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(326, 246);
+            this.groupBox2.TabIndex = 14;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Delete Facility";
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(100, 191);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(115, 46);
+            this.button1.TabIndex = 9;
+            this.button1.Text = "Delete Facility";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // FacilityID
+            // 
+            this.FacilityID.HeaderText = "FacilityID";
+            this.FacilityID.MinimumWidth = 6;
+            this.FacilityID.Name = "FacilityID";
+            this.FacilityID.ReadOnly = true;
+            this.FacilityID.Width = 125;
+            // 
+            // FacilityName
+            // 
+            this.FacilityName.HeaderText = "FacilityName";
+            this.FacilityName.MinimumWidth = 6;
+            this.FacilityName.Name = "FacilityName";
+            this.FacilityName.ReadOnly = true;
+            this.FacilityName.Width = 125;
+            // 
+            // FacilityLocation
+            // 
+            this.FacilityLocation.HeaderText = "FacilityLocation";
+            this.FacilityLocation.MinimumWidth = 6;
+            this.FacilityLocation.Name = "FacilityLocation";
+            this.FacilityLocation.ReadOnly = true;
+            this.FacilityLocation.Width = 125;
+            // 
+            // FacilityAvailibility
+            // 
+            this.FacilityAvailibility.HeaderText = "FacilityAvailability";
+            this.FacilityAvailibility.MinimumWidth = 6;
+            this.FacilityAvailibility.Name = "FacilityAvailibility";
+            this.FacilityAvailibility.ReadOnly = true;
+            this.FacilityAvailibility.Width = 125;
+            // 
             // Manage_Sports_and_Recreational_Facilities
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.chkAvailable);
-            this.Controls.Add(this.txtFacilityLocation);
-            this.Controls.Add(this.nudRate);
-            this.Controls.Add(this.txtFacilityName);
+            this.ClientSize = new System.Drawing.Size(838, 450);
+            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -242,11 +322,15 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.groupBox2);
             this.Name = "Manage_Sports_and_Recreational_Facilities";
             this.Text = "Manage_Sports_and_Recreational_Facilities";
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.nudRate)).EndInit();
             this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.groupBox2.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -271,5 +355,12 @@
         private System.Windows.Forms.CheckBox chkAvailable;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Button btnAddFacility;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn FacilityID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn FacilityName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn FacilityLocation;
+        private System.Windows.Forms.DataGridViewTextBoxColumn FacilityAvailibility;
     }
 }
