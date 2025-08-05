@@ -29,12 +29,12 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnRepairAndReplace = new System.Windows.Forms.Button();
+            this.btnMaintenance = new System.Windows.Forms.Button();
+            this.btnSportsAndRecreational = new System.Windows.Forms.Button();
+            this.btnManageUserAcc = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.lblName = new System.Windows.Forms.Label();
-            this.btnManageUserAcc = new System.Windows.Forms.Button();
-            this.btnSportsAndRecreational = new System.Windows.Forms.Button();
-            this.btnMaintenance = new System.Windows.Forms.Button();
-            this.btnRepairAndReplace = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -51,51 +51,18 @@
             this.panel1.Size = new System.Drawing.Size(200, 448);
             this.panel1.TabIndex = 0;
             // 
-            // label1
+            // btnRepairAndReplace
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(278, 160);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(328, 46);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Welcome, Manager";
-            // 
-            // lblName
-            // 
-            this.lblName.AutoSize = true;
-            this.lblName.Font = new System.Drawing.Font("Segoe UI Semibold", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblName.Location = new System.Drawing.Point(347, 230);
-            this.lblName.Name = "lblName";
-            this.lblName.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.lblName.Size = new System.Drawing.Size(0, 41);
-            this.lblName.TabIndex = 2;
-            // 
-            // btnManageUserAcc
-            // 
-            this.btnManageUserAcc.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btnManageUserAcc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnManageUserAcc.Font = new System.Drawing.Font("Segoe UI Semibold", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnManageUserAcc.ForeColor = System.Drawing.Color.White;
-            this.btnManageUserAcc.Location = new System.Drawing.Point(22, 73);
-            this.btnManageUserAcc.Name = "btnManageUserAcc";
-            this.btnManageUserAcc.Size = new System.Drawing.Size(155, 50);
-            this.btnManageUserAcc.TabIndex = 0;
-            this.btnManageUserAcc.Text = "User Accounts";
-            this.btnManageUserAcc.UseVisualStyleBackColor = false;
-            // 
-            // btnSportsAndRecreational
-            // 
-            this.btnSportsAndRecreational.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btnSportsAndRecreational.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSportsAndRecreational.Font = new System.Drawing.Font("Segoe UI Semibold", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSportsAndRecreational.ForeColor = System.Drawing.Color.White;
-            this.btnSportsAndRecreational.Location = new System.Drawing.Point(22, 156);
-            this.btnSportsAndRecreational.Name = "btnSportsAndRecreational";
-            this.btnSportsAndRecreational.Size = new System.Drawing.Size(155, 50);
-            this.btnSportsAndRecreational.TabIndex = 1;
-            this.btnSportsAndRecreational.Text = "Sports and Recreational Facilities";
-            this.btnSportsAndRecreational.UseVisualStyleBackColor = false;
+            this.btnRepairAndReplace.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnRepairAndReplace.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRepairAndReplace.Font = new System.Drawing.Font("Segoe UI Semibold", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRepairAndReplace.ForeColor = System.Drawing.Color.White;
+            this.btnRepairAndReplace.Location = new System.Drawing.Point(22, 321);
+            this.btnRepairAndReplace.Name = "btnRepairAndReplace";
+            this.btnRepairAndReplace.Size = new System.Drawing.Size(155, 50);
+            this.btnRepairAndReplace.TabIndex = 3;
+            this.btnRepairAndReplace.Text = "Repair and Replacement";
+            this.btnRepairAndReplace.UseVisualStyleBackColor = false;
             // 
             // btnMaintenance
             // 
@@ -110,18 +77,51 @@
             this.btnMaintenance.Text = "Maintenance Staff and Schedule";
             this.btnMaintenance.UseVisualStyleBackColor = false;
             // 
-            // btnRepairAndReplace
+            // btnSportsAndRecreational
             // 
-            this.btnRepairAndReplace.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btnRepairAndReplace.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRepairAndReplace.Font = new System.Drawing.Font("Segoe UI Semibold", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRepairAndReplace.ForeColor = System.Drawing.Color.White;
-            this.btnRepairAndReplace.Location = new System.Drawing.Point(22, 321);
-            this.btnRepairAndReplace.Name = "btnRepairAndReplace";
-            this.btnRepairAndReplace.Size = new System.Drawing.Size(155, 50);
-            this.btnRepairAndReplace.TabIndex = 3;
-            this.btnRepairAndReplace.Text = "Repair and Replacement";
-            this.btnRepairAndReplace.UseVisualStyleBackColor = false;
+            this.btnSportsAndRecreational.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnSportsAndRecreational.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSportsAndRecreational.Font = new System.Drawing.Font("Segoe UI Semibold", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSportsAndRecreational.ForeColor = System.Drawing.Color.White;
+            this.btnSportsAndRecreational.Location = new System.Drawing.Point(22, 156);
+            this.btnSportsAndRecreational.Name = "btnSportsAndRecreational";
+            this.btnSportsAndRecreational.Size = new System.Drawing.Size(155, 50);
+            this.btnSportsAndRecreational.TabIndex = 1;
+            this.btnSportsAndRecreational.Text = "Sports and Recreational Facilities";
+            this.btnSportsAndRecreational.UseVisualStyleBackColor = false;
+            // 
+            // btnManageUserAcc
+            // 
+            this.btnManageUserAcc.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnManageUserAcc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnManageUserAcc.Font = new System.Drawing.Font("Segoe UI Semibold", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnManageUserAcc.ForeColor = System.Drawing.Color.White;
+            this.btnManageUserAcc.Location = new System.Drawing.Point(22, 73);
+            this.btnManageUserAcc.Name = "btnManageUserAcc";
+            this.btnManageUserAcc.Size = new System.Drawing.Size(155, 50);
+            this.btnManageUserAcc.TabIndex = 0;
+            this.btnManageUserAcc.Text = "User Accounts";
+            this.btnManageUserAcc.UseVisualStyleBackColor = false;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(278, 160);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(320, 45);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Welcome, Manager";
+            // 
+            // lblName
+            // 
+            this.lblName.AutoSize = true;
+            this.lblName.Font = new System.Drawing.Font("Segoe UI Semibold", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblName.Location = new System.Drawing.Point(347, 230);
+            this.lblName.Name = "lblName";
+            this.lblName.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lblName.Size = new System.Drawing.Size(0, 41);
+            this.lblName.TabIndex = 2;
             // 
             // Manager
             // 
@@ -132,7 +132,7 @@
             this.Controls.Add(this.lblName);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "Manager";
             this.Text = "Manager";
             this.panel1.ResumeLayout(false);

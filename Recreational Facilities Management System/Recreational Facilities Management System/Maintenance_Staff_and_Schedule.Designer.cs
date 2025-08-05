@@ -215,7 +215,7 @@
             this.Controls.Add(this.lable1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.groupBox1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "Maintenance_Staff_and_Schedule";
             this.Text = "Maintenance_Staff_and_Schedule";
             this.panel1.ResumeLayout(false);
