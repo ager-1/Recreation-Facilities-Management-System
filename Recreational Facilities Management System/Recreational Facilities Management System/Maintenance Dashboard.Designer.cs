@@ -143,6 +143,7 @@
             this.ClientSize = new System.Drawing.Size(1241, 741);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "Maintenance";
             this.Text = "Maintenance";
             this.panel1.ResumeLayout(false);

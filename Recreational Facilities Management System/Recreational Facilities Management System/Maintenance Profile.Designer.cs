@@ -234,6 +234,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "Maintenance_Profile";
             this.Text = "Maintenance_Profile";
             this.panel2.ResumeLayout(false);

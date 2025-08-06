@@ -202,6 +202,7 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.dataGridView1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "Maintenance_Status";
             this.Text = "Maintenance_Status";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

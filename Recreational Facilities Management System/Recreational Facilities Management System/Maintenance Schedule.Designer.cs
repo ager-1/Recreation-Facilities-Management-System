@@ -29,6 +29,12 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnUpdateProfile = new System.Windows.Forms.Button();
+            this.btnLogOut = new System.Windows.Forms.Button();
+            this.btnViewSchedule = new System.Windows.Forms.Button();
+            this.btnUpdateStatus = new System.Windows.Forms.Button();
+            this.btnMngSupplies = new System.Windows.Forms.Button();
+            this.btnRepair = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -38,12 +44,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.btnFilter = new System.Windows.Forms.Button();
             this.btnRefresh = new System.Windows.Forms.Button();
-            this.btnUpdateProfile = new System.Windows.Forms.Button();
-            this.btnLogOut = new System.Windows.Forms.Button();
-            this.btnViewSchedule = new System.Windows.Forms.Button();
-            this.btnUpdateStatus = new System.Windows.Forms.Button();
-            this.btnMngSupplies = new System.Windows.Forms.Button();
-            this.btnRepair = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -62,6 +62,78 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(413, 734);
             this.panel1.TabIndex = 0;
+            // 
+            // btnUpdateProfile
+            // 
+            this.btnUpdateProfile.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnUpdateProfile.Font = new System.Drawing.Font("Verdana", 8.142858F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUpdateProfile.ForeColor = System.Drawing.Color.White;
+            this.btnUpdateProfile.Location = new System.Drawing.Point(10, 648);
+            this.btnUpdateProfile.Name = "btnUpdateProfile";
+            this.btnUpdateProfile.Size = new System.Drawing.Size(182, 54);
+            this.btnUpdateProfile.TabIndex = 11;
+            this.btnUpdateProfile.Text = "Update Profile";
+            this.btnUpdateProfile.UseVisualStyleBackColor = true;
+            // 
+            // btnLogOut
+            // 
+            this.btnLogOut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLogOut.Font = new System.Drawing.Font("Verdana", 8.142858F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLogOut.ForeColor = System.Drawing.Color.White;
+            this.btnLogOut.Location = new System.Drawing.Point(214, 648);
+            this.btnLogOut.Name = "btnLogOut";
+            this.btnLogOut.Size = new System.Drawing.Size(182, 54);
+            this.btnLogOut.TabIndex = 12;
+            this.btnLogOut.Text = "Logout";
+            this.btnLogOut.UseVisualStyleBackColor = true;
+            // 
+            // btnViewSchedule
+            // 
+            this.btnViewSchedule.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnViewSchedule.Font = new System.Drawing.Font("Verdana", 8.142858F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnViewSchedule.ForeColor = System.Drawing.Color.White;
+            this.btnViewSchedule.Location = new System.Drawing.Point(51, 160);
+            this.btnViewSchedule.Name = "btnViewSchedule";
+            this.btnViewSchedule.Size = new System.Drawing.Size(282, 68);
+            this.btnViewSchedule.TabIndex = 7;
+            this.btnViewSchedule.Text = "View Maintenance Schedule";
+            this.btnViewSchedule.UseVisualStyleBackColor = true;
+            // 
+            // btnUpdateStatus
+            // 
+            this.btnUpdateStatus.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnUpdateStatus.Font = new System.Drawing.Font("Verdana", 8.142858F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUpdateStatus.ForeColor = System.Drawing.Color.White;
+            this.btnUpdateStatus.Location = new System.Drawing.Point(51, 267);
+            this.btnUpdateStatus.Name = "btnUpdateStatus";
+            this.btnUpdateStatus.Size = new System.Drawing.Size(282, 70);
+            this.btnUpdateStatus.TabIndex = 8;
+            this.btnUpdateStatus.Text = "Update Maintenance Status";
+            this.btnUpdateStatus.UseVisualStyleBackColor = true;
+            // 
+            // btnMngSupplies
+            // 
+            this.btnMngSupplies.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMngSupplies.Font = new System.Drawing.Font("Verdana", 8.142858F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMngSupplies.ForeColor = System.Drawing.Color.White;
+            this.btnMngSupplies.Location = new System.Drawing.Point(51, 377);
+            this.btnMngSupplies.Name = "btnMngSupplies";
+            this.btnMngSupplies.Size = new System.Drawing.Size(282, 68);
+            this.btnMngSupplies.TabIndex = 9;
+            this.btnMngSupplies.Text = "Manage Cleaning Supplies";
+            this.btnMngSupplies.UseVisualStyleBackColor = true;
+            // 
+            // btnRepair
+            // 
+            this.btnRepair.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRepair.Font = new System.Drawing.Font("Verdana", 8.142858F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRepair.ForeColor = System.Drawing.Color.White;
+            this.btnRepair.Location = new System.Drawing.Point(51, 490);
+            this.btnRepair.Name = "btnRepair";
+            this.btnRepair.Size = new System.Drawing.Size(282, 62);
+            this.btnRepair.TabIndex = 10;
+            this.btnRepair.Text = "Raise Repair/Replacement Request";
+            this.btnRepair.UseVisualStyleBackColor = true;
             // 
             // dataGridView1
             // 
@@ -143,78 +215,6 @@
             this.btnRefresh.Text = "Refresh";
             this.btnRefresh.UseVisualStyleBackColor = true;
             // 
-            // btnUpdateProfile
-            // 
-            this.btnUpdateProfile.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnUpdateProfile.Font = new System.Drawing.Font("Verdana", 8.142858F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnUpdateProfile.ForeColor = System.Drawing.Color.White;
-            this.btnUpdateProfile.Location = new System.Drawing.Point(10, 648);
-            this.btnUpdateProfile.Name = "btnUpdateProfile";
-            this.btnUpdateProfile.Size = new System.Drawing.Size(182, 54);
-            this.btnUpdateProfile.TabIndex = 11;
-            this.btnUpdateProfile.Text = "Update Profile";
-            this.btnUpdateProfile.UseVisualStyleBackColor = true;
-            // 
-            // btnLogOut
-            // 
-            this.btnLogOut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLogOut.Font = new System.Drawing.Font("Verdana", 8.142858F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLogOut.ForeColor = System.Drawing.Color.White;
-            this.btnLogOut.Location = new System.Drawing.Point(214, 648);
-            this.btnLogOut.Name = "btnLogOut";
-            this.btnLogOut.Size = new System.Drawing.Size(182, 54);
-            this.btnLogOut.TabIndex = 12;
-            this.btnLogOut.Text = "Logout";
-            this.btnLogOut.UseVisualStyleBackColor = true;
-            // 
-            // btnViewSchedule
-            // 
-            this.btnViewSchedule.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnViewSchedule.Font = new System.Drawing.Font("Verdana", 8.142858F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnViewSchedule.ForeColor = System.Drawing.Color.White;
-            this.btnViewSchedule.Location = new System.Drawing.Point(51, 160);
-            this.btnViewSchedule.Name = "btnViewSchedule";
-            this.btnViewSchedule.Size = new System.Drawing.Size(282, 68);
-            this.btnViewSchedule.TabIndex = 7;
-            this.btnViewSchedule.Text = "View Maintenance Schedule";
-            this.btnViewSchedule.UseVisualStyleBackColor = true;
-            // 
-            // btnUpdateStatus
-            // 
-            this.btnUpdateStatus.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnUpdateStatus.Font = new System.Drawing.Font("Verdana", 8.142858F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnUpdateStatus.ForeColor = System.Drawing.Color.White;
-            this.btnUpdateStatus.Location = new System.Drawing.Point(51, 267);
-            this.btnUpdateStatus.Name = "btnUpdateStatus";
-            this.btnUpdateStatus.Size = new System.Drawing.Size(282, 70);
-            this.btnUpdateStatus.TabIndex = 8;
-            this.btnUpdateStatus.Text = "Update Maintenance Status";
-            this.btnUpdateStatus.UseVisualStyleBackColor = true;
-            // 
-            // btnMngSupplies
-            // 
-            this.btnMngSupplies.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMngSupplies.Font = new System.Drawing.Font("Verdana", 8.142858F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMngSupplies.ForeColor = System.Drawing.Color.White;
-            this.btnMngSupplies.Location = new System.Drawing.Point(51, 377);
-            this.btnMngSupplies.Name = "btnMngSupplies";
-            this.btnMngSupplies.Size = new System.Drawing.Size(282, 68);
-            this.btnMngSupplies.TabIndex = 9;
-            this.btnMngSupplies.Text = "Manage Cleaning Supplies";
-            this.btnMngSupplies.UseVisualStyleBackColor = true;
-            // 
-            // btnRepair
-            // 
-            this.btnRepair.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRepair.Font = new System.Drawing.Font("Verdana", 8.142858F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRepair.ForeColor = System.Drawing.Color.White;
-            this.btnRepair.Location = new System.Drawing.Point(51, 490);
-            this.btnRepair.Name = "btnRepair";
-            this.btnRepair.Size = new System.Drawing.Size(282, 62);
-            this.btnRepair.TabIndex = 10;
-            this.btnRepair.Text = "Raise Repair/Replacement Request";
-            this.btnRepair.UseVisualStyleBackColor = true;
-            // 
             // Maintenance_Schedule
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
@@ -226,6 +226,7 @@
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.panel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "Maintenance_Schedule";
             this.Text = "Maintenance_Schedule";
             this.panel1.ResumeLayout(false);

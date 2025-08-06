@@ -206,6 +206,7 @@
             this.Controls.Add(this.btnEdit);
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.dataGridView1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "Maintenance__CleaningSupplies";
             this.Text = "Maintenance__CleaningSupplies";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

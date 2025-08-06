@@ -207,6 +207,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtbxDesc);
             this.Controls.Add(this.txtbxFacility);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "Repair_Request";
             this.Text = "Repair_Request";
             this.panel2.ResumeLayout(false);
