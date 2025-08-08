@@ -38,18 +38,25 @@
             this.label2 = new System.Windows.Forms.Label();
             this.txtUsername = new System.Windows.Forms.TextBox();
             this.lable3 = new System.Windows.Forms.Label();
-            this.txtPassword = new System.Windows.Forms.TextBox();
+            this.txtEmail = new System.Windows.Forms.TextBox();
             this.btnAddUser = new System.Windows.Forms.Button();
             this.btnDeleteUser = new System.Windows.Forms.Button();
             this.dgvUser = new System.Windows.Forms.DataGridView();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.cmbUniversity = new System.Windows.Forms.ComboBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.txtPhone = new System.Windows.Forms.TextBox();
             this.UserID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.UserName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.UserEmail = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.UserPhone = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.UserUniversity = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.UserRole = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvUser)).BeginInit();
+            this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -145,9 +152,9 @@
             this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(216, 131);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(104, 28);
+            this.label2.Size = new System.Drawing.Size(66, 28);
             this.label2.TabIndex = 3;
-            this.label2.Text = "Username";
+            this.label2.Text = "Name";
             // 
             // txtUsername
             // 
@@ -160,27 +167,28 @@
             // 
             this.lable3.AutoSize = true;
             this.lable3.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lable3.Location = new System.Drawing.Point(216, 184);
+            this.lable3.Location = new System.Drawing.Point(10, 134);
             this.lable3.Name = "lable3";
-            this.lable3.Size = new System.Drawing.Size(97, 28);
+            this.lable3.Size = new System.Drawing.Size(102, 28);
             this.lable3.TabIndex = 5;
-            this.lable3.Text = "Password";
+            this.lable3.Text = "University";
             // 
-            // txtPassword
+            // txtEmail
             // 
-            this.txtPassword.Location = new System.Drawing.Point(333, 187);
-            this.txtPassword.Name = "txtPassword";
-            this.txtPassword.Size = new System.Drawing.Size(165, 22);
-            this.txtPassword.TabIndex = 6;
+            this.txtEmail.Location = new System.Drawing.Point(127, 63);
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.Size = new System.Drawing.Size(165, 22);
+            this.txtEmail.TabIndex = 6;
             // 
             // btnAddUser
             // 
-            this.btnAddUser.Location = new System.Drawing.Point(294, 229);
+            this.btnAddUser.Location = new System.Drawing.Point(92, 183);
             this.btnAddUser.Name = "btnAddUser";
             this.btnAddUser.Size = new System.Drawing.Size(104, 46);
             this.btnAddUser.TabIndex = 7;
             this.btnAddUser.Text = "Add User";
             this.btnAddUser.UseVisualStyleBackColor = true;
+            this.btnAddUser.Click += new System.EventHandler(this.btnAddUser_Click);
             // 
             // btnDeleteUser
             // 
@@ -200,6 +208,8 @@
             this.UserID,
             this.UserName,
             this.UserEmail,
+            this.UserPhone,
+            this.UserUniversity,
             this.UserRole});
             this.dgvUser.Location = new System.Drawing.Point(6, 22);
             this.dgvUser.Name = "dgvUser";
@@ -209,6 +219,68 @@
             this.dgvUser.RowTemplate.Height = 24;
             this.dgvUser.Size = new System.Drawing.Size(290, 150);
             this.dgvUser.TabIndex = 9;
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.txtPhone);
+            this.groupBox1.Controls.Add(this.label4);
+            this.groupBox1.Controls.Add(this.lable3);
+            this.groupBox1.Controls.Add(this.label3);
+            this.groupBox1.Controls.Add(this.txtEmail);
+            this.groupBox1.Controls.Add(this.cmbUniversity);
+            this.groupBox1.Controls.Add(this.btnAddUser);
+            this.groupBox1.Location = new System.Drawing.Point(206, 111);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(302, 247);
+            this.groupBox1.TabIndex = 10;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Add User";
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.dgvUser);
+            this.groupBox2.Controls.Add(this.btnDeleteUser);
+            this.groupBox2.Location = new System.Drawing.Point(514, 111);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(302, 247);
+            this.groupBox2.TabIndex = 11;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Delete User";
+            // 
+            // cmbUniversity
+            // 
+            this.cmbUniversity.FormattingEnabled = true;
+            this.cmbUniversity.Location = new System.Drawing.Point(127, 138);
+            this.cmbUniversity.Name = "cmbUniversity";
+            this.cmbUniversity.Size = new System.Drawing.Size(165, 24);
+            this.cmbUniversity.TabIndex = 8;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(10, 59);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(60, 28);
+            this.label3.TabIndex = 12;
+            this.label3.Text = "Email";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(10, 96);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(71, 28);
+            this.label4.TabIndex = 13;
+            this.label4.Text = "Phone";
+            // 
+            // txtPhone
+            // 
+            this.txtPhone.Location = new System.Drawing.Point(127, 102);
+            this.txtPhone.Name = "txtPhone";
+            this.txtPhone.Size = new System.Drawing.Size(165, 22);
+            this.txtPhone.TabIndex = 14;
             // 
             // UserID
             // 
@@ -234,6 +306,22 @@
             this.UserEmail.ReadOnly = true;
             this.UserEmail.Width = 125;
             // 
+            // UserPhone
+            // 
+            this.UserPhone.HeaderText = "UserPhone";
+            this.UserPhone.MinimumWidth = 6;
+            this.UserPhone.Name = "UserPhone";
+            this.UserPhone.ReadOnly = true;
+            this.UserPhone.Width = 125;
+            // 
+            // UserUniversity
+            // 
+            this.UserUniversity.HeaderText = "UserUniversity";
+            this.UserUniversity.MinimumWidth = 6;
+            this.UserUniversity.Name = "UserUniversity";
+            this.UserUniversity.ReadOnly = true;
+            this.UserUniversity.Width = 125;
+            // 
             // UserRole
             // 
             this.UserRole.HeaderText = "UserRole";
@@ -242,34 +330,11 @@
             this.UserRole.ReadOnly = true;
             this.UserRole.Width = 125;
             // 
-            // groupBox1
-            // 
-            this.groupBox1.Location = new System.Drawing.Point(206, 111);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(302, 181);
-            this.groupBox1.TabIndex = 10;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Add User";
-            // 
-            // groupBox2
-            // 
-            this.groupBox2.Controls.Add(this.dgvUser);
-            this.groupBox2.Controls.Add(this.btnDeleteUser);
-            this.groupBox2.Location = new System.Drawing.Point(514, 111);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(302, 247);
-            this.groupBox2.TabIndex = 11;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Delete User";
-            // 
             // Manage_User_Accounts
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(841, 450);
-            this.Controls.Add(this.btnAddUser);
-            this.Controls.Add(this.txtPassword);
-            this.Controls.Add(this.lable3);
             this.Controls.Add(this.txtUsername);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -282,6 +347,8 @@
             this.Text = "Manage_User_Accounts";
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvUser)).EndInit();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -300,15 +367,21 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtUsername;
         private System.Windows.Forms.Label lable3;
-        private System.Windows.Forms.TextBox txtPassword;
+        private System.Windows.Forms.TextBox txtEmail;
         private System.Windows.Forms.Button btnAddUser;
         private System.Windows.Forms.Button btnDeleteUser;
         private System.Windows.Forms.DataGridView dgvUser;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.ComboBox cmbUniversity;
+        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.DataGridViewTextBoxColumn UserID;
         private System.Windows.Forms.DataGridViewTextBoxColumn UserName;
         private System.Windows.Forms.DataGridViewTextBoxColumn UserEmail;
+        private System.Windows.Forms.DataGridViewTextBoxColumn UserPhone;
+        private System.Windows.Forms.DataGridViewTextBoxColumn UserUniversity;
         private System.Windows.Forms.DataGridViewTextBoxColumn UserRole;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.TextBox txtPhone;
+        private System.Windows.Forms.Label label4;
     }
 }
